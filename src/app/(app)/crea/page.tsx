@@ -1,5 +1,10 @@
-import { Titolo } from "@/components/ui";
+import { Suspense } from "react";
+import { Laboratorio } from "./laboratorio";
 
 export default function Pagina() {
-  return <Titolo sotto="Qui scriverai e copierai le caption: arriva al passo 5.">Crea</Titolo>;
+  return (
+    <Suspense>
+      <Laboratorio />
+    </Suspense>
+  );
 }
