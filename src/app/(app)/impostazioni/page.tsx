@@ -4,6 +4,7 @@ import { ChevronRight, FileUp, LogOut, Monitor, Moon, Sun } from "lucide-react";
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { useSessione } from "@/components/accesso";
+import { Promemoria } from "@/components/promemoria";
 import { Scheda, Titolo } from "@/components/ui";
 import { supabase } from "@/lib/supabase/client";
 
@@ -52,6 +53,8 @@ export default function Impostazioni() {
             <ChevronRight className="size-5 text-testo-3" aria-hidden />
           </Scheda>
         </Link>
+
+        <Promemoria />
 
         <Scheda>
           <p className="mb-3 font-semibold">Tema</p>
