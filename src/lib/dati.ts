@@ -43,26 +43,3 @@ export async function caricaStorico(): Promise<VoceStorico[]> {
   ];
   return voci.sort((a, b) => b.importato_il.localeCompare(a.importato_il));
 }
-
-export type ContenutoLista = {
-  id: string;
-  codice: string | null;
-  titolo: string;
-  account: string;
-  formato: string;
-  stato: string;
-  data_uscita: string | null;
-  pub_ora: string;
-  partita_mancante: boolean;
-  rubriche: { nome: string; colore: string } | null;
-};
-
-export async function caricaContenuti(): Promise<ContenutoLista[]> {
-  return controlla(
-    await supabase
-      .from("v_contenuti")
-      .select("id, codice, titolo, account, formato, stato, data_uscita, pub_ora, partita_mancante, rubriche(nome, colore)")
-      .order("data_uscita", { nullsFirst: true })
-      .order("pub_ora"),
-  ) as unknown as ContenutoLista[];
-}
