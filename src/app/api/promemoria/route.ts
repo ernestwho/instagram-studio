@@ -5,7 +5,7 @@ import { chiaviMancanti, invia, iscrizioneSchema, notificaSchema, stessoSegreto 
 const corpoSchema = z.object({ notifiche: z.array(notificaSchema), iscrizioni: z.array(iscrizioneSchema) });
 
 export async function POST(request: Request) {
-  const segreto = process.env.PROMEMORIA_SEGRETO;
+  const segreto = (process.env.PROMEMORIA_SEGRETO ?? "").trim();
   const ricevuto = request.headers.get("authorization")?.replace(/^Bearer /, "") ?? "";
   if (!segreto || !stessoSegreto(ricevuto, segreto)) return Response.json({ errore: "non autorizzato" }, { status: 401 });
   if (chiaviMancanti()) return Response.json({ errore: "chiavi VAPID mancanti" }, { status: 500 });
