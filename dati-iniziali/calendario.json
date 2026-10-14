@@ -1,0 +1,23 @@
+{
+  "tipo": "calendario_partite",
+  "versione": 1,
+  "stagione": "2026/27",
+  "squadra": "Virtus Kleb Ragusa",
+  "campionato": "Serie B Interregionale",
+  "aggiornato_il": "2026-10-14",
+  "partite": [
+    { "id": "2026-27-g01", "giornata": 1,  "data": "2026-09-26", "ora": "20:00", "casa": "Virtus Kleb Ragusa", "ospite": "Promobasket Marigliano 2003", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 4" },
+    { "id": "2026-27-g03", "giornata": 3,  "data": "2026-10-11", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Air Basket Termoli", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 20" },
+    { "id": "2026-27-g05", "giornata": 5,  "data": "2026-10-25", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Miwa Energia Benevento", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 34" },
+    { "id": "2026-27-g07", "giornata": 7,  "data": "2026-11-08", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Svincolati Milazzo", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 45" },
+    { "id": "2026-27-g09", "giornata": 9,  "data": "2026-11-22", "ora": "17:00", "casa": "Virtus Kleb Ragusa", "ospite": "Pallacanestro Sora 1967", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 57" },
+    { "id": "2026-27-g11", "giornata": 11, "data": "2026-12-06", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Angri Pallacanestro", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 72" },
+    { "id": "2026-27-g13", "giornata": 13, "data": "2026-12-20", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Gela Basket", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 91" },
+    { "id": "2026-27-g15", "giornata": 15, "data": "2027-01-17", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Basket Academy Catanzaro", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 103" },
+    { "id": "2026-27-g17", "giornata": 17, "data": "2027-01-31", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Bim Bum Basket Rende", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 117" },
+    { "id": "2026-27-g19", "giornata": 19, "data": "2027-02-14", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Cleman Impianti Sarno", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 133" },
+    { "id": "2026-27-g21", "giornata": 21, "data": "2027-02-28", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Barcellona Basket", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 145" },
+    { "id": "2026-27-g23", "giornata": 23, "data": "2027-03-14", "ora": "18:00", "casa": "Virtus Kleb Ragusa", "ospite": "Polisportiva Matese", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 160" },
+    { "id": "2026-27-g25", "giornata": 25, "data": "2027-04-04", "ora": "19:00", "casa": "Virtus Kleb Ragusa", "ospite": "Basket School Messina", "palazzetto": "PalaPadua", "indirizzo": "Via Zama, 97100 Ragusa (RG)", "note": "Gara FIP n. 171" }
+  ]
+}

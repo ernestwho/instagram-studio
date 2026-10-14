@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
+/* Tema scuro con la classe .dark su <html> (impostata prima del caricamento, vedi layout). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sfondo: #f6f5f2;
+  --superficie: #ffffff;
+  --superficie-2: #efede8;
+  --bordo: #e2dfd8;
+  --testo: #16171a;
+  --testo-2: #5d6068;
+  --testo-3: #8b8e96;
+  --accento: #e8571c;
+  --accento-testo: #ffffff;
+  --successo: #2f8a5b;
+  --avviso: #b7791f;
+  --errore: #c2352b;
+  color-scheme: light;
+}
+
+.dark {
+  --sfondo: #0e0f12;
+  --superficie: #17181c;
+  --superficie-2: #202227;
+  --bordo: #2c2e34;
+  --testo: #f2f1ed;
+  --testo-2: #a7a9b0;
+  --testo-3: #6f727a;
+  --accento: #ff6a2b;
+  --accento-testo: #0e0f12;
+  --successo: #4cc38a;
+  --avviso: #e5b45a;
+  --errore: #ff6b5e;
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-sfondo: var(--sfondo);
+  --color-superficie: var(--superficie);
+  --color-superficie-2: var(--superficie-2);
+  --color-bordo: var(--bordo);
+  --color-testo: var(--testo);
+  --color-testo-2: var(--testo-2);
+  --color-testo-3: var(--testo-3);
+  --color-accento: var(--accento);
+  --color-accento-testo: var(--accento-testo);
+  --color-successo: var(--successo);
+  --color-avviso: var(--avviso);
+  --color-errore: var(--errore);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-display);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--sfondo);
+  color: var(--testo);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Spazio per la barra in basso e per la "notch" dei telefoni. */
+.pb-barra {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+}
+.barra-sicura {
+  padding-bottom: env(safe-area-inset-bottom);
 }
