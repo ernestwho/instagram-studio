@@ -43,7 +43,7 @@ export function Protetto({ children }: { children: ReactNode }) {
   if (ammesso !== true)
     return (
       <main className="mx-auto flex min-h-dvh max-w-sm flex-col justify-center gap-4 px-6">
-        <p className="font-display text-3xl font-bold uppercase tracking-wide">Accesso non abilitato</p>
+        <p className="font-display text-3xl font-extrabold tracking-tight">Accesso non abilitato</p>
         <p className="text-testo-2">
           {typeof ammesso === "string"
             ? `Non riesco a verificare l'accesso: ${ammesso}`

@@ -124,7 +124,7 @@ export function Laboratorio() {
   }
 
   if (errore) return <p className="text-errore">Non riesco a leggere i dati: {errore}</p>;
-  if (!contenuti) return <Titolo>Crea</Titolo>;
+  if (!contenuti) return <Titolo occhiello="02 — Laboratorio caption">Crea</Titolo>;
 
   const oggiStr = oggi();
   const sceglibili = contenuti.filter(
@@ -135,7 +135,7 @@ export function Laboratorio() {
 
   return (
     <>
-      <Titolo sotto="Scrivi la caption, poi copiala e incollala su Instagram.">Crea</Titolo>
+      <Titolo occhiello="02 — Laboratorio caption" sotto="Scrivi la caption, poi copiala e incollala su Instagram.">Crea</Titolo>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <div className="flex min-w-0 flex-col gap-4">
@@ -293,12 +293,12 @@ function EditorHashtag({ valore, onChange }: { valore: string[]; onChange: (h: s
       {valore.length > 0 ? (
         <ul className="flex flex-wrap gap-1.5">
           {valore.map((h) => (
-            <li key={h} className="flex items-center gap-1 rounded-full bg-superficie-2 py-1 pr-1 pl-3 text-sm">
+            <li key={h} className="flex items-center gap-1 bg-superficie-2 py-1 pr-1 pl-3 text-sm">
               {h}
               <button
                 onClick={() => onChange(valore.filter((x) => x !== h))}
                 aria-label={`Togli ${h}`}
-                className="rounded-full p-1 text-testo-3 hover:bg-bordo hover:text-testo"
+                className="p-1 text-testo-3 hover:bg-bordo hover:text-testo"
               >
                 <X className="size-3.5" aria-hidden />
               </button>

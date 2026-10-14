@@ -41,7 +41,7 @@ export default function Impostazioni() {
 
   return (
     <>
-      <Titolo>Impostazioni</Titolo>
+      <Titolo occhiello="04 — Preferenze">Impostazioni</Titolo>
       <div className="flex flex-col gap-4">
         <Link href="/impostazioni/importa">
           <Scheda className="flex items-center gap-3 transition hover:bg-superficie-2">

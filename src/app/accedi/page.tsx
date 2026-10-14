@@ -27,11 +27,8 @@ export default function Accedi() {
 
   return (
     <main className="mx-auto flex min-h-dvh max-w-sm flex-col justify-center px-6">
-      <p className="font-display text-5xl font-bold uppercase leading-none tracking-wide">
-        Instagram
-        <br />
-        <span className="text-accento">Studio</span>
-      </p>
+      <p className="occhiello mb-2">Instagram · 2026</p>
+      <p className="font-display text-6xl font-extrabold leading-none tracking-tight">Studio</p>
       <p className="mt-3 mb-10 text-testo-2">Il tuo piano editoriale, sempre in tasca.</p>
       <form onSubmit={accedi} className="flex flex-col gap-4">
         <label className="flex flex-col gap-1.5 text-sm font-medium">

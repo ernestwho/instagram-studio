@@ -47,12 +47,12 @@ export default function Piano() {
   );
 
   if (errore) return <p className="text-errore">Non riesco a leggere il piano: {errore}</p>;
-  if (!contenuti) return <Titolo>Piano</Titolo>;
+  if (!contenuti) return <Titolo occhiello="01 — Piano editoriale">Piano</Titolo>;
 
   if (contenuti.length === 0)
     return (
       <>
-        <Titolo>Piano</Titolo>
+        <Titolo occhiello="01 — Piano editoriale">Piano</Titolo>
         <Scheda>
           <p className="mb-4 text-testo-2">Non c&apos;è ancora nessun contenuto. Carica calendario e piano editoriale.</p>
           <Link href="/impostazioni/importa" className={stileBottone}>
@@ -70,7 +70,7 @@ export default function Piano() {
 
   return (
     <>
-      <Titolo sotto={`${daFare} contenuti in arrivo`}>Piano</Titolo>
+      <Titolo occhiello="01 — Piano editoriale" sotto={`${daFare} contenuti in arrivo`}>Piano</Titolo>
 
       {prossima && <ProssimaPartita partita={prossima} contenuti={contenuti} oggi={oggiStr} />}
 
@@ -96,7 +96,7 @@ export default function Piano() {
         <button
           aria-pressed={filtri.storico}
           onClick={() => setFiltri({ ...filtri, storico: !filtri.storico })}
-          className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
+          className={`shrink-0 border px-3 py-1.5 text-sm ${
             filtri.storico ? "border-accento text-accento" : "border-bordo text-testo-2"
           }`}
         >
@@ -106,10 +106,10 @@ export default function Piano() {
 
       {daSistemare.length > 0 && (
         <section className="mb-6">
-          <h2 className="mb-2 flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wide text-avviso">
+          <h2 className="mb-3 flex items-center gap-1.5 border-b-2 border-avviso pb-2 font-display text-xl font-extrabold tracking-tight text-avviso">
             <AlertTriangle className="size-4" aria-hidden /> Da sistemare
           </h2>
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col">
             {daSistemare.map((c) => (
               <RigaContenuto key={c.id} c={c} />
             ))}
@@ -123,8 +123,8 @@ export default function Piano() {
 
       {gruppi.map(([titolo, voci]) => (
         <section key={titolo} className="mb-6">
-          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-testo-3">{titolo}</h2>
-          <ul className="flex flex-col gap-2">
+          <h2 className="mb-3 border-b-2 border-testo pb-2 font-display text-xl font-extrabold tracking-tight">{titolo}</h2>
+          <ul className="flex flex-col">
             {voci.map((c) => (
               <RigaContenuto key={c.id} c={c} />
             ))}
@@ -135,7 +135,7 @@ export default function Piano() {
       <Link
         href="/piano/nuovo"
         aria-label="Nuovo contenuto extra"
-        className="fixed right-4 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] z-20 flex size-14 items-center justify-center rounded-full bg-accento text-accento-testo shadow-lg shadow-black/20 md:bottom-8"
+        className="fixed right-4 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] z-20 flex size-14 items-center justify-center bg-accento text-accento-testo shadow-lg shadow-black/20 md:bottom-8"
       >
         <Plus className="size-7" aria-hidden />
       </Link>
@@ -176,7 +176,7 @@ function Selettore({
       aria-label={etichetta}
       value={valore}
       onChange={(e) => onChange(e.target.value)}
-      className={`shrink-0 appearance-none rounded-full border bg-superficie px-3 py-1.5 text-sm ${
+      className={`shrink-0 appearance-none border bg-superficie px-3 py-1.5 text-sm ${
         valore ? "border-accento text-accento" : "border-bordo text-testo-2"
       }`}
     >
@@ -194,15 +194,15 @@ function ProssimaPartita({ partita, contenuti, oggi }: { partita: PartitaBreve; 
   const collegati = contenuti.filter((c) => c.partita_id === partita.id);
   const fatti = collegati.filter((c) => c.stato !== "da_girare").length;
   return (
-    <Scheda className="mb-5 overflow-hidden border-accento/30 p-0">
-      <div className="bg-accento/10 px-4 py-3">
-        <p className="text-xs font-semibold uppercase tracking-wider text-accento">
+    <Scheda className="mb-5 overflow-hidden border-accento p-0">
+      <div className="bg-accento px-4 py-4 text-accento-testo">
+        <p className="text-xs font-semibold uppercase tracking-wider opacity-80">
           {partita.data === oggi ? "Partita di oggi" : "Prossima partita"} · giornata {partita.giornata}
         </p>
-        <p className="mt-0.5 font-display text-2xl font-bold uppercase leading-tight tracking-wide">
+        <p className="mt-0.5 font-display text-2xl font-extrabold leading-tight tracking-tight">
           {partita.casa} – {partita.ospite}
         </p>
-        <p className="flex items-center gap-1 text-sm text-testo-2">
+        <p className="flex items-center gap-1 text-sm opacity-90">
           {dataBreve(partita.data)}, {oraBreve(partita.ora)} · <MapPin className="size-3.5" aria-hidden />
           {partita.palazzetto}
         </p>

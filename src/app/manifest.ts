@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: "it",
     start_url: "/piano",
     display: "standalone",
-    background_color: "#0e0f12",
-    theme_color: "#0e0f12",
+    background_color: "#f2f2f2",
+    theme_color: "#1e1e1e",
     icons: [
       { src: "/icona-192.png", sizes: "192x192", type: "image/png" },
       { src: "/icona-512.png", sizes: "512x512", type: "image/png" },

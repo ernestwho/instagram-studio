@@ -160,7 +160,7 @@ export function ModuloContenuto({ contenuto }: { contenuto?: Contenuto }) {
       >
         <ArrowLeft className="size-5" aria-hidden /> Indietro
       </button>
-      <Titolo sotto={contenuto?.piano_id ? "Le modifiche restano finché non importi un nuovo piano." : undefined}>
+      <Titolo occhiello="01 — Piano editoriale" sotto={contenuto?.piano_id ? "Le modifiche restano finché non importi un nuovo piano." : undefined}>
         {contenuto ? "Modifica" : "Nuovo contenuto"}
       </Titolo>
 

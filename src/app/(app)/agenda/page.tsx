@@ -94,7 +94,7 @@ export default function Agenda() {
 
   return (
     <>
-      <Titolo sotto="Tieni premuto un contenuto e trascinalo per spostarlo.">Agenda</Titolo>
+      <Titolo occhiello="03 — Calendario" sotto="Tieni premuto un contenuto e trascinalo per spostarlo.">Agenda</Titolo>
       {errore && (
         <p role="alert" className="mb-3 text-sm text-errore">
           {errore}
