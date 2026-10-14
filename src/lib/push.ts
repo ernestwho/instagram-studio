@@ -17,14 +17,22 @@ export const notificaSchema = z.object({
 });
 export type Notifica = z.infer<typeof notificaSchema>;
 
+// trim(): uno spazio o un a capo incollato per sbaglio su Vercel rende la chiave non valida.
+const chiavePubblica = () => (process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY ?? "").trim();
+const chiavePrivata = () => (process.env.VAPID_PRIVATE_KEY ?? "").trim();
+
 export function chiaviMancanti() {
-  return !process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || !process.env.VAPID_PRIVATE_KEY;
+  return !chiavePubblica() || !chiavePrivata();
 }
 
 /** Manda le notifiche a tutti i dispositivi; restituisce quelli non più validi (disinstallati o revocati). */
 export async function invia(notifiche: Notifica[], iscrizioni: Iscrizione[]) {
   const dominio = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? "localhost";
-  webpush.setVapidDetails(`https://${dominio}`, process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!, process.env.VAPID_PRIVATE_KEY!);
+  try {
+    webpush.setVapidDetails(`https://${dominio}`, chiavePubblica(), chiavePrivata());
+  } catch (e) {
+    throw new Error(`Chiavi VAPID non valide nelle variabili di Vercel (${(e as Error).message})`);
+  }
   const scadute = new Set<string>();
   let inviate = 0;
   const errori: string[] = [];

@@ -17,7 +17,7 @@ export function iphoneDaInstallare() {
 }
 
 function chiaveVapid() {
-  const base64 = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY ?? "";
+  const base64 = (process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY ?? "").trim();
   const pulita = (base64 + "=".repeat((4 - (base64.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/");
   return Uint8Array.from(atob(pulita), (c) => c.charCodeAt(0));
 }

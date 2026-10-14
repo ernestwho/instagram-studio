@@ -18,9 +18,17 @@ export async function POST(request: Request) {
 
   const iscrizione = iscrizioneSchema.safeParse((await request.json().catch(() => null))?.iscrizione);
   if (!iscrizione.success) return Response.json({ errore: "iscrizione non valida" }, { status: 400 });
-  const esito = await invia(
-    [{ chiave: "prova", titolo: "Instagram Studio", corpo: "Le notifiche funzionano su questo dispositivo.", url: "/impostazioni" }],
-    [iscrizione.data],
-  );
-  return Response.json(esito, { status: esito.inviate ? 200 : 502 });
+  let esito: Awaited<ReturnType<typeof invia>>;
+  try {
+    esito = await invia(
+      [{ chiave: "prova", titolo: "Instagram Studio", corpo: "Le notifiche funzionano su questo dispositivo.", url: "/impostazioni" }],
+      [iscrizione.data],
+    );
+  } catch (e) {
+    return Response.json({ errore: (e as Error).message }, { status: 500 });
+  }
+  if (esito.inviate) return Response.json(esito);
+  // Mostra in Impostazioni il motivo dato dal servizio push (Apple, Google, Mozilla).
+  const motivo = esito.scadute.length ? "iscrizione scaduta: disattiva e riattiva le notifiche" : esito.errori.join("; ");
+  return Response.json({ ...esito, errore: `Il servizio push ha rifiutato la notifica (${motivo})` }, { status: 502 });
 }
