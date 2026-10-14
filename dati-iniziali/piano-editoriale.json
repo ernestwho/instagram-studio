@@ -1,0 +1,1184 @@
+{
+  "tipo": "piano_editoriale",
+  "versione": 1,
+  "id": "piano-autunno-2026",
+  "nome": "Piano autunno 2026",
+  "valido_dal": "2026-10-19",
+  "valido_al": "2026-12-31",
+  "rubriche": [
+    {
+      "id": "vigilia",
+      "nome": "Vigilia",
+      "colore": "#8A94A6"
+    },
+    {
+      "id": "live",
+      "nome": "Storie live",
+      "colore": "#E4572E"
+    },
+    {
+      "id": "pov-risultato",
+      "nome": "POV → risultato",
+      "colore": "#2E86AB"
+    },
+    {
+      "id": "foto-matchday",
+      "nome": "Foto matchday",
+      "colore": "#F2A541"
+    },
+    {
+      "id": "slowmo",
+      "nome": "Slow motion",
+      "colore": "#7B5EA7"
+    },
+    {
+      "id": "unposted",
+      "nome": "Unposted",
+      "colore": "#3D9970"
+    },
+    {
+      "id": "allenamento",
+      "nome": "Allenamento",
+      "colore": "#C1666B"
+    }
+  ],
+  "contenuti": [
+    {
+      "id": "c001",
+      "account": "@ernestwhoo",
+      "titolo": "Slow motion: La schiacciata",
+      "rubrica": "slowmo",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-10-20",
+        "ora": "19:00"
+      },
+      "obiettivo": "Una singola clip rielaborata da artista: tenere vivo il profilo senza partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Una schiacciata della partita precedente, rallentata dal salto all'atterraggio (dal girato già fatto, nessuna ripresa nuova)"
+        ],
+        "inquadrature": [
+          "Una sola clip, possibilmente girata ad alto frame rate"
+        ],
+        "durata": "6-12 secondi",
+        "formato_video": "9:16",
+        "gancio": "Il momento clou nel primo secondo, poi lo rallenti",
+        "audio": "Un bel pezzo sotto, scelto per il ritmo della clip",
+        "montaggio": "Rallenty pulito, grading curato, nessun testo. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "La schiacciata.",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c002",
+      "account": "@ernestwhoo",
+      "titolo": "Allenamento Virtus",
+      "rubrica": "allenamento",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-10-22",
+        "ora": "19:00"
+      },
+      "obiettivo": "Mostrare che sei dentro l'ambiente Virtus Ragusa ogni settimana, non solo il giorno della partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Prima dell'allenamento: arrivo in palestra, scarpe, nastro alle caviglie",
+          "Scattale durante la sessione settimanale di interviste"
+        ],
+        "inquadrature": [
+          "Strette e dettagli",
+          "Una larga della palestra"
+        ],
+        "durata": "3-5 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Allenamento' e tag della squadra",
+        "audio": "Audio ambiente o un pezzo leggero",
+        "montaggio": "Foto pulite, tag dei giocatori presenti. Niente schemi o lavagne leggibili."
+      },
+      "caption_bozza": "Settimana di lavoro.",
+      "hashtag": []
+    },
+    {
+      "id": "c003",
+      "account": "@ernestwhoo",
+      "titolo": "Vigilia: Virtus Kleb Ragusa – Miwa Energia Benevento",
+      "rubrica": "vigilia",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g05",
+        "giorni_dopo": -1,
+        "ora": "18:00"
+      },
+      "obiettivo": "Creare attesa per la partita e ricordare che domani sei a bordo campo.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "1 foto dall'allenamento della settimana (tenuta da parte durante le interviste)",
+          "1 dettaglio del PalaPadua o dell'attrezzatura pronta nello zaino"
+        ],
+        "inquadrature": [
+          "Ritratto stretto di un giocatore",
+          "Dettaglio: pallone, scarpe, borsa camera"
+        ],
+        "durata": "2-3 storie",
+        "formato_video": "9:16",
+        "gancio": "Sticker conto alla rovescia sulla prima storia",
+        "audio": "Nessun audio o un pezzo strumentale lento",
+        "montaggio": "Foto pulite, testo minimo: avversario, orario, PalaPadua. Ricondividi la locandina ufficiale del club."
+      },
+      "caption_bozza": "Domani al PalaPadua. Virtus Kleb Ragusa – Miwa Energia Benevento, ore 18:00.",
+      "hashtag": []
+    },
+    {
+      "id": "c004",
+      "account": "@ernestwhoo",
+      "titolo": "Storie live: Virtus Kleb Ragusa – Miwa Energia Benevento",
+      "rubrica": "live",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g05",
+        "giorni_dopo": 0,
+        "ora": "16:00"
+      },
+      "obiettivo": "Far vivere la partita da bordo campo, dal tuo punto di vista.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Arrivo al palazzetto e setup",
+          "Riscaldamento",
+          "Ingresso squadre",
+          "1-2 momenti di gioco",
+          "Atmosfera e tifosi",
+          "Fine partita"
+        ],
+        "inquadrature": [
+          "POV tuo con la camera in mano",
+          "Monitor/display della camera con il frame appena scattato",
+          "Larga del palazzetto"
+        ],
+        "durata": "6-10 storie nell'arco della serata",
+        "formato_video": "9:16",
+        "gancio": "Prima storia: tu che monti la camera, testo 'Matchday'",
+        "audio": "Audio ambiente del palazzetto",
+        "montaggio": "Girate col telefono, pubblicate in diretta. Niente risultato prima che lo pubblichi il club. Usa questa partita anche per girare il POV del reel di lunedì."
+      },
+      "caption_bozza": "Matchday.",
+      "hashtag": []
+    },
+    {
+      "id": "c005",
+      "account": "@ernestwhoo",
+      "titolo": "POV → risultato: Virtus Kleb Ragusa – Miwa Energia Benevento",
+      "rubrica": "pov-risultato",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g05",
+        "giorni_dopo": 1,
+        "ora": "19:00"
+      },
+      "obiettivo": "Il formato di punta: mostrare il processo e il frame finito. Porta nuovi follower e clienti.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "POV: tu a bordo campo con la camera, girato con telefono su gimbal/mount o da un amico",
+          "La clip o la foto finita corrispondente, girata con la camera principale"
+        ],
+        "inquadrature": [
+          "Mani sulla camera e mirino",
+          "Azione vista dal tuo punto",
+          "Stacco netto sul risultato finale a tutto schermo"
+        ],
+        "durata": "8-15 secondi",
+        "formato_video": "9:16",
+        "gancio": "Primi 2 secondi: il POV dell'azione che parte, stacco sul risultato a tempo di musica",
+        "audio": "Un pezzo con un drop netto dove cade lo stacco",
+        "montaggio": "Una sola azione, un solo stacco. Color grading del risultato come nei lavori per il club. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Dietro la camera vs dentro il frame.\nVirtus Kleb Ragusa – Miwa Energia Benevento 📍 PalaPadua",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c006",
+      "account": "@ernestwhoo",
+      "titolo": "Carosello matchday: Virtus Kleb Ragusa – Miwa Energia Benevento",
+      "rubrica": "foto-matchday",
+      "formato": "carosello",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g05",
+        "giorni_dopo": 3,
+        "ora": "13:00"
+      },
+      "obiettivo": "Il portfolio fotografico: le tue foto migliori della partita, pulite e curate.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Selezione delle 6-10 foto migliori della partita"
+        ],
+        "inquadrature": [
+          "Apertura: la foto più forte (azione o emozione)",
+          "Alterna larghe, strette e dettagli",
+          "Chiusura: tifosi o esultanza"
+        ],
+        "durata": "6-10 slide",
+        "formato_video": "4:5",
+        "gancio": "La prima slide deve fermare lo scroll da sola",
+        "audio": "Musica opzionale sul carosello",
+        "montaggio": "Stesso grading su tutte le foto, nessuna grafica sopra. Evita di ripetere foto già usate dal club nello stesso giorno. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Virtus Kleb Ragusa – Miwa Energia Benevento.\n📍 PalaPadua, Ragusa",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c007",
+      "account": "@ernestwhoo",
+      "titolo": "Unposted",
+      "rubrica": "unposted",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-11-03",
+        "ora": "19:00"
+      },
+      "obiettivo": "Dare valore al materiale che resta fuori e mostrare la quantità di lavoro dietro ogni partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Le foto rimaste fuori dal carosello dell'ultima partita"
+        ],
+        "inquadrature": [
+          "4-6 foto, una per storia"
+        ],
+        "durata": "4-6 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Unposted'",
+        "audio": "Nessun audio o un pezzo strumentale",
+        "montaggio": "Foto a pieno schermo o con bordo neutro, stesso grading. Testo minimo."
+      },
+      "caption_bozza": "Unposted.",
+      "hashtag": []
+    },
+    {
+      "id": "c008",
+      "account": "@ernestwhoo",
+      "titolo": "Allenamento Virtus",
+      "rubrica": "allenamento",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-11-05",
+        "ora": "19:00"
+      },
+      "obiettivo": "Mostrare che sei dentro l'ambiente Virtus Ragusa ogni settimana, non solo il giorno della partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Tiri: sequenza di tiro di un giocatore",
+          "Scattale durante la sessione settimanale di interviste"
+        ],
+        "inquadrature": [
+          "Strette e dettagli",
+          "Una larga della palestra"
+        ],
+        "durata": "3-5 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Allenamento' e tag della squadra",
+        "audio": "Audio ambiente o un pezzo leggero",
+        "montaggio": "Foto pulite, tag dei giocatori presenti. Niente schemi o lavagne leggibili."
+      },
+      "caption_bozza": "Settimana di lavoro.",
+      "hashtag": []
+    },
+    {
+      "id": "c009",
+      "account": "@ernestwhoo",
+      "titolo": "Vigilia: Virtus Kleb Ragusa – Svincolati Milazzo",
+      "rubrica": "vigilia",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g07",
+        "giorni_dopo": -1,
+        "ora": "18:00"
+      },
+      "obiettivo": "Creare attesa per la partita e ricordare che domani sei a bordo campo.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "1 foto dall'allenamento della settimana (tenuta da parte durante le interviste)",
+          "1 dettaglio del PalaPadua o dell'attrezzatura pronta nello zaino"
+        ],
+        "inquadrature": [
+          "Ritratto stretto di un giocatore",
+          "Dettaglio: pallone, scarpe, borsa camera"
+        ],
+        "durata": "2-3 storie",
+        "formato_video": "9:16",
+        "gancio": "Sticker conto alla rovescia sulla prima storia",
+        "audio": "Nessun audio o un pezzo strumentale lento",
+        "montaggio": "Foto pulite, testo minimo: avversario, orario, PalaPadua. Ricondividi la locandina ufficiale del club."
+      },
+      "caption_bozza": "Domani al PalaPadua. Virtus Kleb Ragusa – Svincolati Milazzo, ore 18:00.",
+      "hashtag": []
+    },
+    {
+      "id": "c010",
+      "account": "@ernestwhoo",
+      "titolo": "Storie live: Virtus Kleb Ragusa – Svincolati Milazzo",
+      "rubrica": "live",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g07",
+        "giorni_dopo": 0,
+        "ora": "16:00"
+      },
+      "obiettivo": "Far vivere la partita da bordo campo, dal tuo punto di vista.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Arrivo al palazzetto e setup",
+          "Riscaldamento",
+          "Ingresso squadre",
+          "1-2 momenti di gioco",
+          "Atmosfera e tifosi",
+          "Fine partita"
+        ],
+        "inquadrature": [
+          "POV tuo con la camera in mano",
+          "Monitor/display della camera con il frame appena scattato",
+          "Larga del palazzetto"
+        ],
+        "durata": "6-10 storie nell'arco della serata",
+        "formato_video": "9:16",
+        "gancio": "Prima storia: tu che monti la camera, testo 'Matchday'",
+        "audio": "Audio ambiente del palazzetto",
+        "montaggio": "Girate col telefono, pubblicate in diretta. Niente risultato prima che lo pubblichi il club. Usa questa partita anche per girare il POV del reel di lunedì."
+      },
+      "caption_bozza": "Matchday.",
+      "hashtag": []
+    },
+    {
+      "id": "c011",
+      "account": "@ernestwhoo",
+      "titolo": "POV → risultato: Virtus Kleb Ragusa – Svincolati Milazzo",
+      "rubrica": "pov-risultato",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g07",
+        "giorni_dopo": 1,
+        "ora": "19:00"
+      },
+      "obiettivo": "Il formato di punta: mostrare il processo e il frame finito. Porta nuovi follower e clienti.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "POV: tu a bordo campo con la camera, girato con telefono su gimbal/mount o da un amico",
+          "La clip o la foto finita corrispondente, girata con la camera principale"
+        ],
+        "inquadrature": [
+          "Mani sulla camera e mirino",
+          "Azione vista dal tuo punto",
+          "Stacco netto sul risultato finale a tutto schermo"
+        ],
+        "durata": "8-15 secondi",
+        "formato_video": "9:16",
+        "gancio": "Primi 2 secondi: il POV dell'azione che parte, stacco sul risultato a tempo di musica",
+        "audio": "Un pezzo con un drop netto dove cade lo stacco",
+        "montaggio": "Una sola azione, un solo stacco. Color grading del risultato come nei lavori per il club. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Dietro la camera vs dentro il frame.\nVirtus Kleb Ragusa – Svincolati Milazzo 📍 PalaPadua",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c012",
+      "account": "@ernestwhoo",
+      "titolo": "Carosello matchday: Virtus Kleb Ragusa – Svincolati Milazzo",
+      "rubrica": "foto-matchday",
+      "formato": "carosello",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g07",
+        "giorni_dopo": 3,
+        "ora": "13:00"
+      },
+      "obiettivo": "Il portfolio fotografico: le tue foto migliori della partita, pulite e curate.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Selezione delle 6-10 foto migliori della partita"
+        ],
+        "inquadrature": [
+          "Apertura: la foto più forte (azione o emozione)",
+          "Alterna larghe, strette e dettagli",
+          "Chiusura: tifosi o esultanza"
+        ],
+        "durata": "6-10 slide",
+        "formato_video": "4:5",
+        "gancio": "La prima slide deve fermare lo scroll da sola",
+        "audio": "Musica opzionale sul carosello",
+        "montaggio": "Stesso grading su tutte le foto, nessuna grafica sopra. Evita di ripetere foto già usate dal club nello stesso giorno. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Virtus Kleb Ragusa – Svincolati Milazzo.\n📍 PalaPadua, Ragusa",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c013",
+      "account": "@ernestwhoo",
+      "titolo": "Slow motion: Il dettaglio",
+      "rubrica": "slowmo",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-11-17",
+        "ora": "19:00"
+      },
+      "obiettivo": "Una singola clip rielaborata da artista: tenere vivo il profilo senza partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Mani sul pallone prima di un tiro libero, rallentate (dal girato già fatto, nessuna ripresa nuova)"
+        ],
+        "inquadrature": [
+          "Una sola clip, possibilmente girata ad alto frame rate"
+        ],
+        "durata": "6-12 secondi",
+        "formato_video": "9:16",
+        "gancio": "Il momento clou nel primo secondo, poi lo rallenti",
+        "audio": "Un bel pezzo sotto, scelto per il ritmo della clip",
+        "montaggio": "Rallenty pulito, grading curato, nessun testo. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Il dettaglio.",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c014",
+      "account": "@ernestwhoo",
+      "titolo": "Allenamento Virtus",
+      "rubrica": "allenamento",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-11-19",
+        "ora": "19:00"
+      },
+      "obiettivo": "Mostrare che sei dentro l'ambiente Virtus Ragusa ogni settimana, non solo il giorno della partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Volti: ritratti stretti durante le pause",
+          "Scattale durante la sessione settimanale di interviste"
+        ],
+        "inquadrature": [
+          "Strette e dettagli",
+          "Una larga della palestra"
+        ],
+        "durata": "3-5 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Allenamento' e tag della squadra",
+        "audio": "Audio ambiente o un pezzo leggero",
+        "montaggio": "Foto pulite, tag dei giocatori presenti. Niente schemi o lavagne leggibili."
+      },
+      "caption_bozza": "Settimana di lavoro.",
+      "hashtag": []
+    },
+    {
+      "id": "c015",
+      "account": "@ernestwhoo",
+      "titolo": "Vigilia: Virtus Kleb Ragusa – Pallacanestro Sora 1967",
+      "rubrica": "vigilia",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g09",
+        "giorni_dopo": -1,
+        "ora": "18:00"
+      },
+      "obiettivo": "Creare attesa per la partita e ricordare che domani sei a bordo campo.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "1 foto dall'allenamento della settimana (tenuta da parte durante le interviste)",
+          "1 dettaglio del PalaPadua o dell'attrezzatura pronta nello zaino"
+        ],
+        "inquadrature": [
+          "Ritratto stretto di un giocatore",
+          "Dettaglio: pallone, scarpe, borsa camera"
+        ],
+        "durata": "2-3 storie",
+        "formato_video": "9:16",
+        "gancio": "Sticker conto alla rovescia sulla prima storia",
+        "audio": "Nessun audio o un pezzo strumentale lento",
+        "montaggio": "Foto pulite, testo minimo: avversario, orario, PalaPadua. Ricondividi la locandina ufficiale del club."
+      },
+      "caption_bozza": "Domani al PalaPadua. Virtus Kleb Ragusa – Pallacanestro Sora 1967, ore 17:00.",
+      "hashtag": []
+    },
+    {
+      "id": "c016",
+      "account": "@ernestwhoo",
+      "titolo": "Storie live: Virtus Kleb Ragusa – Pallacanestro Sora 1967",
+      "rubrica": "live",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g09",
+        "giorni_dopo": 0,
+        "ora": "16:00"
+      },
+      "obiettivo": "Far vivere la partita da bordo campo, dal tuo punto di vista.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Arrivo al palazzetto e setup",
+          "Riscaldamento",
+          "Ingresso squadre",
+          "1-2 momenti di gioco",
+          "Atmosfera e tifosi",
+          "Fine partita"
+        ],
+        "inquadrature": [
+          "POV tuo con la camera in mano",
+          "Monitor/display della camera con il frame appena scattato",
+          "Larga del palazzetto"
+        ],
+        "durata": "6-10 storie nell'arco della serata",
+        "formato_video": "9:16",
+        "gancio": "Prima storia: tu che monti la camera, testo 'Matchday'",
+        "audio": "Audio ambiente del palazzetto",
+        "montaggio": "Girate col telefono, pubblicate in diretta. Niente risultato prima che lo pubblichi il club. Usa questa partita anche per girare il POV del reel di lunedì."
+      },
+      "caption_bozza": "Matchday.",
+      "hashtag": []
+    },
+    {
+      "id": "c017",
+      "account": "@ernestwhoo",
+      "titolo": "POV → risultato: Virtus Kleb Ragusa – Pallacanestro Sora 1967",
+      "rubrica": "pov-risultato",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g09",
+        "giorni_dopo": 1,
+        "ora": "19:00"
+      },
+      "obiettivo": "Il formato di punta: mostrare il processo e il frame finito. Porta nuovi follower e clienti.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "POV: tu a bordo campo con la camera, girato con telefono su gimbal/mount o da un amico",
+          "La clip o la foto finita corrispondente, girata con la camera principale"
+        ],
+        "inquadrature": [
+          "Mani sulla camera e mirino",
+          "Azione vista dal tuo punto",
+          "Stacco netto sul risultato finale a tutto schermo"
+        ],
+        "durata": "8-15 secondi",
+        "formato_video": "9:16",
+        "gancio": "Primi 2 secondi: il POV dell'azione che parte, stacco sul risultato a tempo di musica",
+        "audio": "Un pezzo con un drop netto dove cade lo stacco",
+        "montaggio": "Una sola azione, un solo stacco. Color grading del risultato come nei lavori per il club. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Dietro la camera vs dentro il frame.\nVirtus Kleb Ragusa – Pallacanestro Sora 1967 📍 PalaPadua",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c018",
+      "account": "@ernestwhoo",
+      "titolo": "Carosello matchday: Virtus Kleb Ragusa – Pallacanestro Sora 1967",
+      "rubrica": "foto-matchday",
+      "formato": "carosello",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g09",
+        "giorni_dopo": 3,
+        "ora": "13:00"
+      },
+      "obiettivo": "Il portfolio fotografico: le tue foto migliori della partita, pulite e curate.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Selezione delle 6-10 foto migliori della partita"
+        ],
+        "inquadrature": [
+          "Apertura: la foto più forte (azione o emozione)",
+          "Alterna larghe, strette e dettagli",
+          "Chiusura: tifosi o esultanza"
+        ],
+        "durata": "6-10 slide",
+        "formato_video": "4:5",
+        "gancio": "La prima slide deve fermare lo scroll da sola",
+        "audio": "Musica opzionale sul carosello",
+        "montaggio": "Stesso grading su tutte le foto, nessuna grafica sopra. Evita di ripetere foto già usate dal club nello stesso giorno. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Virtus Kleb Ragusa – Pallacanestro Sora 1967.\n📍 PalaPadua, Ragusa",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c019",
+      "account": "@ernestwhoo",
+      "titolo": "Unposted",
+      "rubrica": "unposted",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-12-01",
+        "ora": "19:00"
+      },
+      "obiettivo": "Dare valore al materiale che resta fuori e mostrare la quantità di lavoro dietro ogni partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Solo dettagli: scarpe, mani, palloni, panchina"
+        ],
+        "inquadrature": [
+          "4-6 foto, una per storia"
+        ],
+        "durata": "4-6 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Unposted'",
+        "audio": "Nessun audio o un pezzo strumentale",
+        "montaggio": "Foto a pieno schermo o con bordo neutro, stesso grading. Testo minimo."
+      },
+      "caption_bozza": "Unposted.",
+      "hashtag": []
+    },
+    {
+      "id": "c020",
+      "account": "@ernestwhoo",
+      "titolo": "Allenamento Virtus",
+      "rubrica": "allenamento",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-12-03",
+        "ora": "19:00"
+      },
+      "obiettivo": "Mostrare che sei dentro l'ambiente Virtus Ragusa ogni settimana, non solo il giorno della partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Il coach: gesti, lavagna, indicazioni",
+          "Scattale durante la sessione settimanale di interviste"
+        ],
+        "inquadrature": [
+          "Strette e dettagli",
+          "Una larga della palestra"
+        ],
+        "durata": "3-5 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Allenamento' e tag della squadra",
+        "audio": "Audio ambiente o un pezzo leggero",
+        "montaggio": "Foto pulite, tag dei giocatori presenti. Niente schemi o lavagne leggibili."
+      },
+      "caption_bozza": "Settimana di lavoro.",
+      "hashtag": []
+    },
+    {
+      "id": "c021",
+      "account": "@ernestwhoo",
+      "titolo": "Vigilia: Virtus Kleb Ragusa – Angri Pallacanestro",
+      "rubrica": "vigilia",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g11",
+        "giorni_dopo": -1,
+        "ora": "18:00"
+      },
+      "obiettivo": "Creare attesa per la partita e ricordare che domani sei a bordo campo.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "1 foto dall'allenamento della settimana (tenuta da parte durante le interviste)",
+          "1 dettaglio del PalaPadua o dell'attrezzatura pronta nello zaino"
+        ],
+        "inquadrature": [
+          "Ritratto stretto di un giocatore",
+          "Dettaglio: pallone, scarpe, borsa camera"
+        ],
+        "durata": "2-3 storie",
+        "formato_video": "9:16",
+        "gancio": "Sticker conto alla rovescia sulla prima storia",
+        "audio": "Nessun audio o un pezzo strumentale lento",
+        "montaggio": "Foto pulite, testo minimo: avversario, orario, PalaPadua. Ricondividi la locandina ufficiale del club."
+      },
+      "caption_bozza": "Domani al PalaPadua. Virtus Kleb Ragusa – Angri Pallacanestro, ore 18:00.",
+      "hashtag": []
+    },
+    {
+      "id": "c022",
+      "account": "@ernestwhoo",
+      "titolo": "Storie live: Virtus Kleb Ragusa – Angri Pallacanestro",
+      "rubrica": "live",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g11",
+        "giorni_dopo": 0,
+        "ora": "16:00"
+      },
+      "obiettivo": "Far vivere la partita da bordo campo, dal tuo punto di vista.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Arrivo al palazzetto e setup",
+          "Riscaldamento",
+          "Ingresso squadre",
+          "1-2 momenti di gioco",
+          "Atmosfera e tifosi",
+          "Fine partita"
+        ],
+        "inquadrature": [
+          "POV tuo con la camera in mano",
+          "Monitor/display della camera con il frame appena scattato",
+          "Larga del palazzetto"
+        ],
+        "durata": "6-10 storie nell'arco della serata",
+        "formato_video": "9:16",
+        "gancio": "Prima storia: tu che monti la camera, testo 'Matchday'",
+        "audio": "Audio ambiente del palazzetto",
+        "montaggio": "Girate col telefono, pubblicate in diretta. Niente risultato prima che lo pubblichi il club. Usa questa partita anche per girare il POV del reel di lunedì."
+      },
+      "caption_bozza": "Matchday.",
+      "hashtag": []
+    },
+    {
+      "id": "c023",
+      "account": "@ernestwhoo",
+      "titolo": "POV → risultato: Virtus Kleb Ragusa – Angri Pallacanestro",
+      "rubrica": "pov-risultato",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g11",
+        "giorni_dopo": 1,
+        "ora": "19:00"
+      },
+      "obiettivo": "Il formato di punta: mostrare il processo e il frame finito. Porta nuovi follower e clienti.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "POV: tu a bordo campo con la camera, girato con telefono su gimbal/mount o da un amico",
+          "La clip o la foto finita corrispondente, girata con la camera principale"
+        ],
+        "inquadrature": [
+          "Mani sulla camera e mirino",
+          "Azione vista dal tuo punto",
+          "Stacco netto sul risultato finale a tutto schermo"
+        ],
+        "durata": "8-15 secondi",
+        "formato_video": "9:16",
+        "gancio": "Primi 2 secondi: il POV dell'azione che parte, stacco sul risultato a tempo di musica",
+        "audio": "Un pezzo con un drop netto dove cade lo stacco",
+        "montaggio": "Una sola azione, un solo stacco. Color grading del risultato come nei lavori per il club. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Dietro la camera vs dentro il frame.\nVirtus Kleb Ragusa – Angri Pallacanestro 📍 PalaPadua",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c024",
+      "account": "@ernestwhoo",
+      "titolo": "Carosello matchday: Virtus Kleb Ragusa – Angri Pallacanestro",
+      "rubrica": "foto-matchday",
+      "formato": "carosello",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g11",
+        "giorni_dopo": 3,
+        "ora": "13:00"
+      },
+      "obiettivo": "Il portfolio fotografico: le tue foto migliori della partita, pulite e curate.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Selezione delle 6-10 foto migliori della partita"
+        ],
+        "inquadrature": [
+          "Apertura: la foto più forte (azione o emozione)",
+          "Alterna larghe, strette e dettagli",
+          "Chiusura: tifosi o esultanza"
+        ],
+        "durata": "6-10 slide",
+        "formato_video": "4:5",
+        "gancio": "La prima slide deve fermare lo scroll da sola",
+        "audio": "Musica opzionale sul carosello",
+        "montaggio": "Stesso grading su tutte le foto, nessuna grafica sopra. Evita di ripetere foto già usate dal club nello stesso giorno. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Virtus Kleb Ragusa – Angri Pallacanestro.\n📍 PalaPadua, Ragusa",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c025",
+      "account": "@ernestwhoo",
+      "titolo": "Slow motion: L'esultanza",
+      "rubrica": "slowmo",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-12-15",
+        "ora": "19:00"
+      },
+      "obiettivo": "Una singola clip rielaborata da artista: tenere vivo il profilo senza partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "L'esultanza più bella della partita precedente, rallentata (dal girato già fatto, nessuna ripresa nuova)"
+        ],
+        "inquadrature": [
+          "Una sola clip, possibilmente girata ad alto frame rate"
+        ],
+        "durata": "6-12 secondi",
+        "formato_video": "9:16",
+        "gancio": "Il momento clou nel primo secondo, poi lo rallenti",
+        "audio": "Un bel pezzo sotto, scelto per il ritmo della clip",
+        "montaggio": "Rallenty pulito, grading curato, nessun testo. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "L'esultanza.",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c026",
+      "account": "@ernestwhoo",
+      "titolo": "Allenamento Virtus",
+      "rubrica": "allenamento",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-12-17",
+        "ora": "19:00"
+      },
+      "obiettivo": "Mostrare che sei dentro l'ambiente Virtus Ragusa ogni settimana, non solo il giorno della partita.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Sudore e fatica: fine esercizio, respiri, mani sulle ginocchia",
+          "Scattale durante la sessione settimanale di interviste"
+        ],
+        "inquadrature": [
+          "Strette e dettagli",
+          "Una larga della palestra"
+        ],
+        "durata": "3-5 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia con testo 'Allenamento' e tag della squadra",
+        "audio": "Audio ambiente o un pezzo leggero",
+        "montaggio": "Foto pulite, tag dei giocatori presenti. Niente schemi o lavagne leggibili."
+      },
+      "caption_bozza": "Settimana di lavoro.",
+      "hashtag": []
+    },
+    {
+      "id": "c027",
+      "account": "@ernestwhoo",
+      "titolo": "Vigilia: Virtus Kleb Ragusa – Gela Basket",
+      "rubrica": "vigilia",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g13",
+        "giorni_dopo": -1,
+        "ora": "18:00"
+      },
+      "obiettivo": "Creare attesa per la partita e ricordare che domani sei a bordo campo.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "1 foto dall'allenamento della settimana (tenuta da parte durante le interviste)",
+          "1 dettaglio del PalaPadua o dell'attrezzatura pronta nello zaino"
+        ],
+        "inquadrature": [
+          "Ritratto stretto di un giocatore",
+          "Dettaglio: pallone, scarpe, borsa camera"
+        ],
+        "durata": "2-3 storie",
+        "formato_video": "9:16",
+        "gancio": "Sticker conto alla rovescia sulla prima storia",
+        "audio": "Nessun audio o un pezzo strumentale lento",
+        "montaggio": "Foto pulite, testo minimo: avversario, orario, PalaPadua. Ricondividi la locandina ufficiale del club."
+      },
+      "caption_bozza": "Domani al PalaPadua. Virtus Kleb Ragusa – Gela Basket, ore 18:00.",
+      "hashtag": []
+    },
+    {
+      "id": "c028",
+      "account": "@ernestwhoo",
+      "titolo": "Storie live: Virtus Kleb Ragusa – Gela Basket",
+      "rubrica": "live",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g13",
+        "giorni_dopo": 0,
+        "ora": "16:00"
+      },
+      "obiettivo": "Far vivere la partita da bordo campo, dal tuo punto di vista.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Arrivo al palazzetto e setup",
+          "Riscaldamento",
+          "Ingresso squadre",
+          "1-2 momenti di gioco",
+          "Atmosfera e tifosi",
+          "Fine partita"
+        ],
+        "inquadrature": [
+          "POV tuo con la camera in mano",
+          "Monitor/display della camera con il frame appena scattato",
+          "Larga del palazzetto"
+        ],
+        "durata": "6-10 storie nell'arco della serata",
+        "formato_video": "9:16",
+        "gancio": "Prima storia: tu che monti la camera, testo 'Matchday'",
+        "audio": "Audio ambiente del palazzetto",
+        "montaggio": "Girate col telefono, pubblicate in diretta. Niente risultato prima che lo pubblichi il club. Usa questa partita anche per girare il POV del reel di lunedì."
+      },
+      "caption_bozza": "Matchday.",
+      "hashtag": []
+    },
+    {
+      "id": "c029",
+      "account": "@ernestwhoo",
+      "titolo": "POV → risultato: Virtus Kleb Ragusa – Gela Basket",
+      "rubrica": "pov-risultato",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g13",
+        "giorni_dopo": 1,
+        "ora": "19:00"
+      },
+      "obiettivo": "Il formato di punta: mostrare il processo e il frame finito. Porta nuovi follower e clienti.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "POV: tu a bordo campo con la camera, girato con telefono su gimbal/mount o da un amico",
+          "La clip o la foto finita corrispondente, girata con la camera principale"
+        ],
+        "inquadrature": [
+          "Mani sulla camera e mirino",
+          "Azione vista dal tuo punto",
+          "Stacco netto sul risultato finale a tutto schermo"
+        ],
+        "durata": "8-15 secondi",
+        "formato_video": "9:16",
+        "gancio": "Primi 2 secondi: il POV dell'azione che parte, stacco sul risultato a tempo di musica",
+        "audio": "Un pezzo con un drop netto dove cade lo stacco",
+        "montaggio": "Una sola azione, un solo stacco. Color grading del risultato come nei lavori per il club. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Dietro la camera vs dentro il frame.\nVirtus Kleb Ragusa – Gela Basket 📍 PalaPadua",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c030",
+      "account": "@ernestwhoo",
+      "titolo": "Carosello matchday: Virtus Kleb Ragusa – Gela Basket",
+      "rubrica": "foto-matchday",
+      "formato": "carosello",
+      "pubblicazione": {
+        "modo": "partita",
+        "partita_id": "2026-27-g13",
+        "giorni_dopo": 3,
+        "ora": "13:00"
+      },
+      "obiettivo": "Il portfolio fotografico: le tue foto migliori della partita, pulite e curate.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Selezione delle 6-10 foto migliori della partita"
+        ],
+        "inquadrature": [
+          "Apertura: la foto più forte (azione o emozione)",
+          "Alterna larghe, strette e dettagli",
+          "Chiusura: tifosi o esultanza"
+        ],
+        "durata": "6-10 slide",
+        "formato_video": "4:5",
+        "gancio": "La prima slide deve fermare lo scroll da sola",
+        "audio": "Musica opzionale sul carosello",
+        "montaggio": "Stesso grading su tutte le foto, nessuna grafica sopra. Evita di ripetere foto già usate dal club nello stesso giorno. Priorità al club: pubblica solo dopo che la Virtus ha pubblicato i suoi contenuti ufficiali, e tagga sempre il profilo della squadra."
+      },
+      "caption_bozza": "Virtus Kleb Ragusa – Gela Basket.\n📍 PalaPadua, Ragusa",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c031",
+      "account": "@ernestwhoo",
+      "titolo": "Il mio 2026 in 30 secondi",
+      "rubrica": "slowmo",
+      "formato": "reel",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-12-29",
+        "ora": "19:00"
+      },
+      "obiettivo": "Chiudere l'anno con un montaggio d'autore dei momenti migliori girati.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Nessuna ripresa nuova: selezione dal girato di settembre-dicembre"
+        ],
+        "inquadrature": [
+          "Un'inquadratura per partita, le più forti",
+          "Chiudi su un frame di te con la camera"
+        ],
+        "durata": "25-30 secondi",
+        "formato_video": "9:16",
+        "gancio": "Il frame più spettacolare dell'anno nel primo secondo",
+        "audio": "Un pezzo emozionale, montaggio a tempo",
+        "montaggio": "Tagli sul beat, grading uniforme, niente testo se non l'anno alla fine. Deve sembrare un tuo lavoro, non il recap del club."
+      },
+      "caption_bozza": "2026, visto da qui.",
+      "hashtag": [
+        "#virtusragusa",
+        "#ragusa",
+        "#basket",
+        "#pallacanestro",
+        "#seriebinterregionale",
+        "#sportsphotography",
+        "#basketballphotography",
+        "#sportsvideography",
+        "#videomaker"
+      ]
+    },
+    {
+      "id": "c032",
+      "account": "@ernestwhoo",
+      "titolo": "Unposted 2026",
+      "rubrica": "unposted",
+      "formato": "storia",
+      "pubblicazione": {
+        "modo": "data",
+        "data": "2026-12-31",
+        "ora": "13:00"
+      },
+      "obiettivo": "Chiudere l'anno con i frame mai pubblicati.",
+      "come_realizzarlo": {
+        "cosa_girare": [
+          "Un frame per mese da settembre a dicembre rimasto fuori"
+        ],
+        "inquadrature": [
+          "Una foto per storia"
+        ],
+        "durata": "4-6 storie",
+        "formato_video": "9:16",
+        "gancio": "Prima storia: 'Unposted 2026'",
+        "audio": "Un pezzo tranquillo",
+        "montaggio": "Pulito, stesso grading, testo minimo."
+      },
+      "caption_bozza": "Unposted 2026.",
+      "hashtag": []
+    }
+  ]
+}
