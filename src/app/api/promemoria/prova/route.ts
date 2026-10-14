@@ -1,7 +1,7 @@
 // Notifica di prova dalle Impostazioni: solo per gli utenti ammessi a Instagram Studio.
 import { createClient } from "@supabase/supabase-js";
 import { chiaviMancanti, invia, iscrizioneSchema } from "@/lib/push";
-import { URL_SUPABASE } from "@/lib/supabase/client";
+import { URL_SUPABASE } from "@/lib/supabase/indirizzo";
 
 export async function POST(request: Request) {
   const token = request.headers.get("authorization")?.replace(/^Bearer /, "");
