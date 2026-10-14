@@ -22,5 +22,8 @@ export async function POST(request: Request) {
     [{ chiave: "prova", titolo: "Instagram Studio", corpo: "Le notifiche funzionano su questo dispositivo.", url: "/impostazioni" }],
     [iscrizione.data],
   );
-  return Response.json(esito, { status: esito.inviate ? 200 : 502 });
+  if (esito.inviate) return Response.json(esito);
+  // Mostra in Impostazioni il motivo dato dal servizio push (Apple, Google, Mozilla).
+  const motivo = esito.scadute.length ? "iscrizione scaduta: disattiva e riattiva le notifiche" : esito.errori.join("; ");
+  return Response.json({ ...esito, errore: `Il servizio push ha rifiutato la notifica (${motivo})` }, { status: 502 });
 }
