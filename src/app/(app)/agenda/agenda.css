@@ -1,0 +1,93 @@
+/* FullCalendar con i colori dell'app, in tema chiaro e scuro. */
+.agenda .fc {
+  --fc-border-color: var(--bordo);
+  --fc-page-bg-color: var(--superficie);
+  --fc-neutral-bg-color: var(--superficie-2);
+  --fc-list-event-hover-bg-color: var(--superficie-2);
+  --fc-today-bg-color: color-mix(in srgb, var(--accento) 10%, transparent);
+  --fc-button-bg-color: var(--superficie-2);
+  --fc-button-border-color: var(--bordo);
+  --fc-button-text-color: var(--testo);
+  --fc-button-hover-bg-color: var(--bordo);
+  --fc-button-hover-border-color: var(--bordo);
+  --fc-button-active-bg-color: var(--accento);
+  --fc-button-active-border-color: var(--accento);
+  --fc-event-text-color: #fff;
+  font-size: 0.875rem;
+}
+.agenda .fc .fc-toolbar-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1.35rem;
+}
+.agenda .fc .fc-button {
+  border-radius: 0.6rem;
+  padding: 0.35rem 0.7rem;
+  box-shadow: none !important;
+}
+.agenda .fc .fc-col-header-cell-cushion,
+.agenda .fc .fc-daygrid-day-number {
+  color: var(--testo-2);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.agenda .fc .fc-day-today .fc-daygrid-day-number {
+  color: var(--accento);
+  font-weight: 700;
+}
+.agenda .fc .fc-event {
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.agenda .fc .evento-partita {
+  background: var(--testo) !important;
+  border-color: var(--testo) !important;
+  color: var(--sfondo);
+}
+.agenda .fc .evento-partita * {
+  color: var(--sfondo);
+}
+/* Sul telefono le celle del mese sono strette: niente ora, solo la rubrica. */
+@media (max-width: 640px) {
+  .agenda .fc .fc-daygrid .ora-evento {
+    display: none;
+  }
+  .agenda .fc .fc-daygrid-event {
+    font-size: 0.7rem;
+  }
+}
+.agenda .fc .fc-list-event-title {
+  width: 100%;
+}
+.agenda .fc .fc-list-event-title .truncate {
+  white-space: normal;
+}
+.agenda .fc .stato-programmato {
+  border-style: dashed !important;
+  border-width: 2px !important;
+  background-color: transparent !important;
+}
+.agenda .fc .stato-programmato * {
+  color: var(--testo);
+}
+.agenda .fc .stato-pubblicato {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+.agenda .fc-list-event-dot {
+  border-color: var(--fc-event-bg-color, var(--accento));
+}
+.agenda .fc .fc-list-event td {
+  color: var(--testo);
+}
+.agenda .fc .fc-list-event.evento-partita td,
+.agenda .fc .fc-list-event.evento-partita * {
+  color: var(--testo);
+  background: var(--superficie-2);
+}
+.agenda .fc .fc-list-day-cushion {
+  background: var(--superficie-2);
+  text-transform: capitalize;
+}
