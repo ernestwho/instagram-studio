@@ -1,8 +1,10 @@
 -- Applicazione degli import in una sola transazione.
 -- L'anteprima e i dati da applicare li calcola l'app (src/lib/import/anteprima.ts).
 
+set search_path to studio, public;
+
 create or replace function applica_calendario(dati jsonb) returns uuid
-language plpgsql security invoker as $$
+language plpgsql security invoker set search_path = studio, public as $$
 declare
   nuovo_id uuid;
 begin
@@ -27,7 +29,7 @@ begin
 end $$;
 
 create or replace function applica_piano(dati jsonb) returns uuid
-language plpgsql security invoker as $$
+language plpgsql security invoker set search_path = studio, public as $$
 declare
   nuovo_id uuid;
 begin

@@ -18,4 +18,12 @@ npm run dev
 npm test                      # test della logica di import e delle date
 ```
 
-Il database si crea dalle migrazioni in `supabase/migrations/`.
+Il database si crea dalle migrazioni in `supabase/migrations/`. Tutto sta nello schema `studio`,
+così l'app può condividere il progetto Supabase con altre app senza toccarne le tabelle.
+Solo gli utenti presenti in `studio.accesso` possono leggere e modificare i dati:
+
+```sql
+insert into studio.accesso (user_id) select id from auth.users where email = 'tua@email.it';
+```
+
+Su Supabase lo schema `studio` va aggiunto agli "Exposed schemas" della Data API.

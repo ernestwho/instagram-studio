@@ -1,7 +1,27 @@
 -- Instagram Studio: schema iniziale.
--- App personale a utente singolo: le policy danno accesso completo a chi ha fatto login.
--- Le registrazioni vanno disattivate su Supabase (Authentication > Sign In / Providers),
--- così l'unico utente è Ernesto.
+-- Tutto vive nello schema "studio", così l'app può stare nello stesso progetto Supabase
+-- di altre app (il gestionale) senza toccarne le tabelle.
+-- Accesso: solo gli utenti elencati in studio.accesso vedono e modificano i dati.
+
+create schema if not exists studio;
+set search_path to studio, public;
+
+grant usage on schema studio to anon, authenticated, service_role;
+alter default privileges in schema studio grant all on tables to authenticated, service_role;
+alter default privileges in schema studio grant all on functions to authenticated, service_role;
+alter default privileges in schema studio grant all on sequences to authenticated, service_role;
+
+-- Utenti che possono usare Instagram Studio.
+create table accesso (
+  user_id uuid primary key references auth.users (id) on delete cascade
+);
+alter table accesso enable row level security;
+create policy vede_se_stesso on accesso for select to authenticated using (user_id = auth.uid());
+
+create or replace function ammesso() returns boolean
+language sql stable security definer set search_path = studio, public as $$
+  select exists (select 1 from studio.accesso where user_id = auth.uid());
+$$;
 
 create type stato_contenuto as enum ('da_girare', 'in_montaggio', 'pronto', 'programmato', 'pubblicato');
 create type formato_contenuto as enum ('foto', 'carosello', 'reel', 'storia');
@@ -130,7 +150,7 @@ create table impostazioni (
   valore jsonb not null
 );
 
--- Accesso completo agli utenti autenticati (app a utente singolo).
+-- Accesso completo solo agli utenti ammessi.
 do $$
 declare t text;
 begin
@@ -138,11 +158,12 @@ begin
                            'modelli_caption', 'gruppi_hashtag', 'iscrizioni_push', 'impostazioni']
   loop
     execute format('alter table %I enable row level security', t);
-    execute format('create policy accesso_utente on %I for all to authenticated using (true) with check (true)', t);
+    execute format('create policy solo_ammessi on %I for all to authenticated using (studio.ammesso()) with check (studio.ammesso())', t);
   end loop;
 end $$;
 
-create or replace function tocca_aggiornato_il() returns trigger language plpgsql as $$
+create or replace function tocca_aggiornato_il() returns trigger
+language plpgsql set search_path = studio, public as $$
 begin
   new.aggiornato_il = now();
   return new;
