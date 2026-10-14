@@ -198,6 +198,8 @@ export function Laboratorio() {
             <EditorHashtag valore={hashtag} onChange={(h) => cambia(caption, h)} />
           </Scheda>
 
+          <Anteprima account={contenuto?.account ?? "@ernestwhoo"} testo={captionCompleta(caption, hashtag)} />
+
           <BottoneCopia testo={captionCompleta(caption, hashtag)} />
         </div>
 
@@ -332,6 +334,45 @@ function EditorHashtag({ valore, onChange }: { valore: string[]; onChange: (h: s
         </button>
       )}
     </>
+  );
+}
+
+/** Come appare la caption sotto il post: nel feed si vede solo l'inizio, poi "altro". */
+function Anteprima({ account, testo }: { account: string; testo: string }) {
+  const [aperta, setAperta] = useState(false);
+  if (!testo.trim()) return null;
+  const righe = testo.split("\n");
+  const inizio = [...righe[0]].slice(0, PRIMA_RIGA).join("");
+  const tagliata = !aperta && (righe.length > 1 || inizio.length < righe[0].length);
+  const mostrato = tagliata ? inizio : testo;
+  return (
+    <Sezione titolo="Anteprima nel feed">
+      <p className="whitespace-pre-wrap text-[15px] leading-snug">
+        <span className="font-semibold">{account.replace(/^@/, "")}</span>{" "}
+        {mostrato.split(/(#[\p{L}\p{N}_]+)/u).map((pezzo, i) =>
+          pezzo.startsWith("#") ? (
+            <span key={i} className="text-sky-700 dark:text-sky-300">
+              {pezzo}
+            </span>
+          ) : (
+            pezzo
+          ),
+        )}
+        {tagliata && (
+          <>
+            …{" "}
+            <button onClick={() => setAperta(true)} className="text-testo-3">
+              altro
+            </button>
+          </>
+        )}
+      </p>
+      {aperta && (
+        <button onClick={() => setAperta(false)} className="self-start text-sm text-testo-3">
+          Mostra meno
+        </button>
+      )}
+    </Sezione>
   );
 }
 
