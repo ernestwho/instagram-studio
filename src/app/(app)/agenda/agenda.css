@@ -10,20 +10,20 @@
   --fc-button-text-color: var(--testo);
   --fc-button-hover-bg-color: var(--bordo);
   --fc-button-hover-border-color: var(--bordo);
-  --fc-button-active-bg-color: var(--accento);
-  --fc-button-active-border-color: var(--accento);
+  --fc-button-active-bg-color: var(--testo);
+  --fc-button-active-border-color: var(--testo);
   --fc-event-text-color: #fff;
   font-size: 0.875rem;
 }
 .agenda .fc .fc-toolbar-title {
   font-family: var(--font-display);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  font-weight: 800;
+  letter-spacing: -0.01em;
   font-size: 1.35rem;
 }
 .agenda .fc .fc-button {
-  border-radius: 0.6rem;
+  border-radius: 0;
+  font-weight: 600;
   padding: 0.35rem 0.7rem;
   box-shadow: none !important;
 }
@@ -38,7 +38,7 @@
   font-weight: 700;
 }
 .agenda .fc .fc-event {
-  border-radius: 0.4rem;
+  border-radius: 0;
   cursor: pointer;
 }
 .agenda .fc .evento-partita {
@@ -90,4 +90,7 @@
 .agenda .fc .fc-list-day-cushion {
   background: var(--superficie-2);
   text-transform: capitalize;
+}
+.agenda .fc .fc-button-active {
+  color: var(--sfondo);
 }

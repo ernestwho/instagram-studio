@@ -4,31 +4,31 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --sfondo: #f6f5f2;
-  --superficie: #ffffff;
-  --superficie-2: #efede8;
-  --bordo: #e2dfd8;
-  --testo: #16171a;
-  --testo-2: #5d6068;
-  --testo-3: #8b8e96;
-  --accento: #e8571c;
+  --sfondo: #f2f2f2;
+  --superficie: #f2f2f2;
+  --superficie-2: #e8e8e8;
+  --bordo: #bdbdbd;
+  --testo: #1e1e1e;
+  --testo-2: #555555;
+  --testo-3: #888888;
+  --accento: #d9442b;
   --accento-testo: #ffffff;
-  --successo: #2f8a5b;
+  --successo: #3e8e4f;
   --avviso: #b7791f;
   --errore: #c2352b;
   color-scheme: light;
 }
 
 .dark {
-  --sfondo: #0e0f12;
-  --superficie: #17181c;
-  --superficie-2: #202227;
-  --bordo: #2c2e34;
-  --testo: #f2f1ed;
-  --testo-2: #a7a9b0;
-  --testo-3: #6f727a;
-  --accento: #ff6a2b;
-  --accento-testo: #0e0f12;
+  --sfondo: #161616;
+  --superficie: #161616;
+  --superficie-2: #232323;
+  --bordo: #3d3d3d;
+  --testo: #f2f2f2;
+  --testo-2: #ababab;
+  --testo-3: #777777;
+  --accento: #e5533a;
+  --accento-testo: #ffffff;
   --successo: #4cc38a;
   --avviso: #e5b45a;
   --errore: #ff6b5e;
@@ -48,8 +48,24 @@
   --color-successo: var(--successo);
   --color-avviso: var(--avviso);
   --color-errore: var(--errore);
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-display);
+  --font-sans: var(--font-archivo);
+  --font-display: var(--font-archivo);
+  /* Angoli vivi come nel gestionale (rounded-full resta per pallini e barre). */
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
+}
+
+/* Occhiello rosso sopra i titoli, come "01 — OGGI" nel gestionale. */
+.occhiello {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accento);
 }
 
 body {

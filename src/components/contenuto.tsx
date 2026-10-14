@@ -5,16 +5,16 @@ import { etichettaStato, ETICHETTE_FORMATO, type Contenuto, type Stato } from "@
 import { dataBreve, oraBreve } from "@/lib/date";
 
 const COLORI_STATO: Record<Stato, string> = {
-  da_girare: "bg-superficie-2 text-testo-2",
-  in_montaggio: "bg-avviso/15 text-avviso",
-  pronto: "bg-accento/15 text-accento",
-  programmato: "bg-sky-500/15 text-sky-600 dark:text-sky-400",
-  pubblicato: "bg-successo/15 text-successo",
+  da_girare: "text-testo-2",
+  in_montaggio: "text-avviso",
+  pronto: "text-accento",
+  programmato: "text-sky-600 dark:text-sky-400",
+  pubblicato: "text-successo",
 };
 
 export function BadgeStato({ stato }: { stato: Stato }) {
   return (
-    <span className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium ${COLORI_STATO[stato]}`}>
+    <span className={`shrink-0 border border-current px-2.5 py-1 text-xs font-medium ${COLORI_STATO[stato]}`}>
       {etichettaStato(stato)}
     </span>
   );
@@ -34,7 +34,7 @@ export function RigaContenuto({ c }: { c: Contenuto }) {
     <li>
       <Link
         href={`/piano/${c.id}`}
-        className="flex items-center gap-3 rounded-2xl border border-bordo bg-superficie px-4 py-3 transition hover:bg-superficie-2 active:scale-[0.99]"
+        className="flex items-center gap-3 border-b border-bordo px-1 py-3.5 transition hover:bg-superficie-2 active:scale-[0.99]"
       >
         <span
           className="h-10 w-1.5 shrink-0 rounded-full"
@@ -42,7 +42,7 @@ export function RigaContenuto({ c }: { c: Contenuto }) {
           aria-hidden
         />
         <div className="min-w-0 flex-1">
-          <p className={`truncate font-medium ${c.stato === "pubblicato" ? "text-testo-2" : ""}`}>{c.titolo}</p>
+          <p className={`truncate text-lg font-semibold leading-snug ${c.stato === "pubblicato" ? "text-testo-2" : ""}`}>{c.titolo}</p>
           <p className="flex items-center gap-1.5 text-sm text-testo-2">
             <IconaFormato formato={c.formato} className="size-3.5" />
             {quando(c)}

@@ -112,7 +112,7 @@ export default function Importa() {
 
   return (
     <>
-      <Titolo sotto="Carica il calendario partite o un piano editoriale in formato JSON.">Importa</Titolo>
+      <Titolo occhiello="04 — Impostazioni" sotto="Carica il calendario partite o un piano editoriale in formato JSON.">Importa</Titolo>
 
       {storico?.length === 0 && fase.tipo === "attesa" && (
         <Scheda className="mb-4 border-accento/40">
@@ -193,7 +193,7 @@ export default function Importa() {
       )}
 
       <section className="mt-10">
-        <h2 className="mb-3 flex items-center gap-2 font-display text-xl font-bold uppercase tracking-wide">
+        <h2 className="mb-3 flex items-center gap-2 font-display text-xl font-extrabold tracking-tight">
           <History className="size-5" aria-hidden /> Storico import
         </h2>
         {storico === null ? (
@@ -208,7 +208,7 @@ export default function Importa() {
                   <p className="font-medium">
                     {v.nome}{" "}
                     {v.attivo && (
-                      <span className="ml-1 rounded-full bg-accento/15 px-2 py-0.5 text-xs text-accento">attivo</span>
+                      <span className="ml-1 bg-accento/15 px-2 py-0.5 text-xs text-accento">attivo</span>
                     )}
                   </p>
                   <p className="text-sm text-testo-2">{testoRiepilogo(v.riepilogo)}</p>
@@ -272,7 +272,7 @@ function Gruppo({ titolo, n, children }: { titolo: string; n: number; children: 
     <details className="group border-t border-bordo py-3" open={n <= 8}>
       <summary className="flex cursor-pointer list-none items-center justify-between font-semibold">
         {titolo}
-        <span className="rounded-full bg-superficie-2 px-2.5 py-0.5 text-sm">{n}</span>
+        <span className="bg-superficie-2 px-2.5 py-0.5 text-sm">{n}</span>
       </summary>
       <ul className="mt-2 flex flex-col gap-1.5 text-sm">{children}</ul>
     </details>

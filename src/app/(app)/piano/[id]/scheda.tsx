@@ -88,7 +88,7 @@ export function SchedaContenuto({ params }: { params: Promise<{ id: string }> })
           <span>{c.account}</span>
           {c.codice && <span className="font-mono text-xs text-testo-3">{c.codice}</span>}
         </p>
-        <h1 className="mt-1 font-display text-3xl font-bold uppercase leading-tight tracking-wide">{c.titolo}</h1>
+        <h1 className="mt-1 font-display text-3xl font-extrabold leading-tight tracking-tight">{c.titolo}</h1>
         <p className="mt-1 text-lg font-medium">{quando(c)}</p>
         {c.partite && (
           <p className="flex flex-wrap items-center gap-1 text-sm text-testo-2">
@@ -121,7 +121,7 @@ export function SchedaContenuto({ params }: { params: Promise<{ id: string }> })
             role="radio"
             aria-checked={c.stato === s.valore}
             onClick={() => salva({ stato: s.valore })}
-            className={`shrink-0 rounded-full border px-3.5 py-2 text-sm font-medium transition ${
+            className={`shrink-0 border px-3.5 py-2 text-sm font-medium transition ${
               c.stato === s.valore ? "border-accento bg-accento text-accento-testo" : "border-bordo text-testo-2"
             }`}
           >
@@ -349,7 +349,7 @@ function SchermoAcceso() {
     <button
       aria-pressed={attivo}
       onClick={() => setAttivo(!attivo)}
-      className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm ${
+      className={`flex items-center gap-1.5 border px-3 py-1.5 text-sm ${
         attivo ? "border-accento text-accento" : "border-bordo text-testo-2"
       }`}
     >
